@@ -10591,11 +10591,11 @@ type QueryDatabaseBodyParameters = {
   >
   filter?:
     | {
-        or_: Array<
+        or: Array<
           | PropertyFilter
           | TimestampCreatedTimeFilter
           | TimestampLastEditedTimeFilter
-          | { or_: Array<PropertyFilter> }
+          | { or: Array<PropertyFilter> }
           | { and: Array<PropertyFilter> }
         >
       }
@@ -10604,7 +10604,7 @@ type QueryDatabaseBodyParameters = {
           | PropertyFilter
           | TimestampCreatedTimeFilter
           | TimestampLastEditedTimeFilter
-          | { or_: Array<PropertyFilter> }
+          | { or: Array<PropertyFilter> }
           | { and: Array<PropertyFilter> }
         >
       }
